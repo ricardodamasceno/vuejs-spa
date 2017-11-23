@@ -1,0 +1,18 @@
+{
+  "name": "vuejs-spa",
+  "version": "1.0.0",
+  "description": "Vue Js Project",
+  "main": "app.js",
+  "scripts": {
+    "start": " node app.js "
+  },
+  "author": "Ricardo Damasceno",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.2"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "install": "^0.10.2"
+  }
+}

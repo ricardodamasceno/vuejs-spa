@@ -1,0 +1,20 @@
+{
+  "name": "vuejs-spa",
+  "description": "Vue Js Project",
+  "main": "app.js",
+  "authors": [
+    "Ricardo Damasceno"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
