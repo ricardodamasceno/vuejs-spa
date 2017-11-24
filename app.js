@@ -7,6 +7,7 @@ var port = process.env.PORT || 3000;
 // Loads all static files inside the directory
 app.use(express.static('src/lib'));
 app.use(express.static('src/app/views'));
+app.use(express.static('node_modules'));
 
 app.get('/', function (req, res) {
     res.render('index');

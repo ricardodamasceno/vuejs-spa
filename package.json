@@ -9,7 +9,8 @@
   "author": "Ricardo Damasceno",
   "license": "MIT",
   "devDependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "vue": "^2.5.8"
   },
   "dependencies": {
     "bower": "^1.8.2",
