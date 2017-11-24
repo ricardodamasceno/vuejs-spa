@@ -8,4 +8,4 @@ To install the necessary dependencies you need to have npm and bower installed a
 
 **bower install**
 
-Now you're good to go.
+After that, type **npm start** and you're good to go.
