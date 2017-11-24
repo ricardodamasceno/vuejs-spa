@@ -1,16 +1,58 @@
 <html>
 <head>
+    <!--libraries imports-->
     <script src="vue/dist/vue.min.js"></script>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
     <title>Vue JS - Single Page Application</title>
 </head>
 <body>
 
-    <div id="app">
-        {{ message }}
+    <div id="index-form">
+        <div class="col-md-6 form-user-data">
+            <div class="form-group">
+                <label for="exampleInputUserName">User Name</label>
+                <input v-model="userName" type="text" class="form-control" id="exampleInputUserName" placeholder="Enter User Name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input v-model="userEmail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-Mail">
+            </div>
+
+            <button v-on:click="addUser" class="btn btn-primary" >Submit</button>
+        </div>
+
+        <div class="col-md-6 table-user-data">
+            <table class="table">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>E-Mail</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="user in users">
+                        <td>{{user.id}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                        <td><button v-on:click="removeUser(user.id)" class="btn btn-primary">Remove User</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
     </div>
+
 
 
     <!--Import files-->
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </body>
 </html>
